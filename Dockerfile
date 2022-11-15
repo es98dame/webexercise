@@ -11,5 +11,6 @@ RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
 
 RUN npm install react-scripts -g
 
+COPY . ./
 
 CMD ["npm", "start"]
